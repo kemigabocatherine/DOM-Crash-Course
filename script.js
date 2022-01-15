@@ -28,6 +28,12 @@ const heading = document.getElementById('heading');
 heading.className = "changeBG"; // class name property
 heading.className += " changeFT";
 
+// class list 
+heading.classList.add("changeCL");
+//heading.classList.remove("changeCL");
+console.log(heading.classList);
+
+
 const lis = document.querySelectorAll('li');
 console.log(lis);
 
