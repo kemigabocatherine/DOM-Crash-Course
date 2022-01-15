@@ -48,20 +48,23 @@
 
 // // class name property
 
-const heading = document.querySelector(".heading");
-const btn = document.querySelector(".btn");
+// EVENTS and event handlers
+// const heading = document.querySelector(".heading");
+// const btn = document.querySelector(".btn");
 
-btn.onclick = () => {
+// btn.onclick = () => {
+//     console.log("Clicked");
+// }
+
+// btn.onmouseover = () => {
+//     heading.style.cssText = "background-color: #531010; color: white";
+// }
+
+// btn.onmouseout = () => {
+//     heading.style.cssText = "background-color: bisque; color: black";
+// }
+
+const clickButton = () => {
     console.log("Clicked");
 }
-
-btn.onmouseover = () => {
-    heading.style.cssText = "background-color: #531010; color: white";
-}
-
-btn.onmouseout = () => {
-    heading.style.cssText = "background-color: bisque; color: black";
-}
-
-
 
