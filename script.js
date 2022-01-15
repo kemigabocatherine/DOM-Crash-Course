@@ -21,29 +21,47 @@
 // const lis = document.querySelectorAll("li");
 // console.log(lis);
 
-const heading = document.getElementById('heading');
-// heading.style.color = "red";
-// heading.style.backgroundColor = "#000";
+// const heading = document.getElementById('heading');
+// // heading.style.color = "red";
+// // heading.style.backgroundColor = "#000";
 
-heading.className = "changeBG"; // class name property
-heading.className += " changeFT";
+// heading.className = "changeBG"; // class name property
+// heading.className += " changeFT";
 
-// class list 
-heading.classList.add("changeCL");
-//heading.classList.remove("changeCL");
-console.log(heading.classList);
+// // class list 
+// heading.classList.add("changeCL");
+// //heading.classList.remove("changeCL");
+// console.log(heading.classList);
 
 
-const lis = document.querySelectorAll('li');
-console.log(lis);
+// const lis = document.querySelectorAll('li');
+// console.log(lis);
 
-// lis[1].style.backgroundColor = "red";
+// // lis[1].style.backgroundColor = "red";
 
-for(let i = 0; i < lis.length; i++){
-    lis[i].style.backgroundColor = "skyblue";
+// for(let i = 0; i < lis.length; i++){
+//     lis[i].style.backgroundColor = "skyblue";
+// }
+
+// // css text property
+// lis[0].style.cssText = "background-color: bisque; color: purple; font-size: 25px";
+
+// // class name property
+
+const heading = document.querySelector(".heading");
+const btn = document.querySelector(".btn");
+
+btn.onclick = () => {
+    console.log("Clicked");
 }
 
-// css text property
-lis[0].style.cssText = "background-color: bisque; color: purple; font-size: 25px";
+btn.onmouseover = () => {
+    heading.style.cssText = "background-color: #531010; color: white";
+}
 
-// class name property
+btn.onmouseout = () => {
+    heading.style.cssText = "background-color: bisque; color: black";
+}
+
+
+
