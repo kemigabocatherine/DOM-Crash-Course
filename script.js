@@ -15,9 +15,24 @@
 
 // // Qeury selector -->returns first element that matches specified css selector
 
-const list = document.querySelector("#list");
-console.log(list);
+// const list = document.querySelector("#list");
+// console.log(list);
 
-const lis = document.querySelectorAll("li");
+// const lis = document.querySelectorAll("li");
+// console.log(lis);
+
+const heading = document.getElementById('heading');
+heading.style.color = "red";
+heading.style.backgroundColor = "#000";
+
+const lis = document.querySelectorAll('li');
 console.log(lis);
 
+// lis[1].style.backgroundColor = "red";
+
+for(let i = 0; i < lis.length; i++){
+    lis[i].style.backgroundColor = "skyblue";
+}
+
+// css text property
+lis[0].style.cssText = "background-color: bisque; color: purple; font-size: 25px";
