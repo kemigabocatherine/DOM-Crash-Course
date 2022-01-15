@@ -22,8 +22,11 @@
 // console.log(lis);
 
 const heading = document.getElementById('heading');
-heading.style.color = "red";
-heading.style.backgroundColor = "#000";
+// heading.style.color = "red";
+// heading.style.backgroundColor = "#000";
+
+heading.className = "changeBG"; // class name property
+heading.className += " changeFT";
 
 const lis = document.querySelectorAll('li');
 console.log(lis);
@@ -36,3 +39,5 @@ for(let i = 0; i < lis.length; i++){
 
 // css text property
 lis[0].style.cssText = "background-color: bisque; color: purple; font-size: 25px";
+
+// class name property
