@@ -53,7 +53,7 @@
 // const btn = document.querySelector(".btn");
 
 // btn.onclick = () => {
-//     console.log("Clicked");
+//      console.log("Clicked");
 // }
 
 // btn.onmouseover = () => {
@@ -64,7 +64,11 @@
 //     heading.style.cssText = "background-color: bisque; color: black";
 // }
 
-const clickButton = () => {
-    console.log("Clicked");
-}
+// const clickButton = () => {
+//     console.log("Clicked!");
+//  }
+
+btn.addEventListener("click",()=> {
+   heading.style.cssText = "background-color: brown;color: white";
+})
 
