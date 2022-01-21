@@ -68,7 +68,8 @@
 //     console.log("Clicked!");
 //  }
 
+const btn = document.querySelector('.btn');
 btn.addEventListener("click",()=> {
-   heading.style.cssText = "background-color: brown;color: white";
+   style.backgroundColor = 'brown';
 })
 
