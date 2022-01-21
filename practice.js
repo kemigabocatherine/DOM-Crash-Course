@@ -30,6 +30,7 @@ function testLogicalOr(val) {
 
 console.log(testLogicalOr(2)); */
 
+
 // Switch statement
 function caseInSwitch(val) {
     var answer = "";
@@ -321,5 +322,15 @@ const squareList = (arr) => {
 
 const squaredIntegers = squareList(realNumberArray);
 console.log(squaredIntegers);
+
+// REST OPERATOR -->(...)
+const sum = (function(){
+    //return function sum(x, y, z) {
+        //const args = [x, y, z];
+    return function sum(...args) {
+        return args.reduce((a, b) => a+b, 0);
+    };
+})();
+console.log(sum(1, 2, 3));
 
 
