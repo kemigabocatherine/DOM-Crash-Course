@@ -333,4 +333,81 @@ const sum = (function(){
 })();
 console.log(sum(1, 2, 3));
 
+// SPREAD OPERATOR TO EVALUATE ARRAYS IN-PLACE
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function() {
+    arr2 = [...arr1];
+    arr1[0] = 'potato'
+})();
+console.log(arr2);
+
+// DESTRUCTURING ASSIGNMENT to assign values to variables
+var voxel = {x: 3.6, y: 7.4, z:6.54};
+
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+
+const {x: a, y: b, z:c} = voxel;// destructured
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79
+};
+
+function getTempOfTmrw(avgTemperatures) {
+    "use strict";
+    //const tempOfTomorrow = undefined;
+    const { tomorrow : tempOfTomorrow} = avgTemperatures;
+    return tempOfTomorrow;
+}
+
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+// for nested objects
+const LOCAL_FORECAST = {
+    today: {min: 72, max: 83},
+    tomorrow: {min: 73.3, max: 84.6}
+};
+
+function getMaxOfTmrw(forecast) {
+    "use strict";
+
+    //const getMaxOfTomorrow = undefined;
+    const { tomorrow: {max : getMaxOfTomorrow}} = forecast;
+
+    return getMaxOfTomorrow;
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+// from arrays
+const [w, m, , n] = [1, 2, 3, 4, 5, 6];
+console.log(w, m, n);
+
+let d = 8, f = 6;
+(() => {
+    "use strict";
+    [d, f] = [f, d]
+})();
+console.log(d);
+console.log(f);
+
+// destructuring with rest operator
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+    const [ , , ...arr] = list;
+
+    return arr;
+}
+
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source);
+
+
+
+
+
 
